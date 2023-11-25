@@ -3,3 +3,8 @@ on: workflow_dispatch
 jobs:
   first-job:
     runs-on: windows-latest 
+    steps:
+      - name: Print Greeting
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Logging Off!"
